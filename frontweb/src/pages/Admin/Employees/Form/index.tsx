@@ -23,6 +23,7 @@ const Form = () => {
   const [selectDepartments, setSelectDepartments] = useState<Department[]>([]);
 
   useEffect(() => {
+    //teste
     requestBackend({ withCredentials: true, url: '/departments' }).then(
       (response) => {
         setSelectDepartments(response.data);
